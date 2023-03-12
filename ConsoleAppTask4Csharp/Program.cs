@@ -379,49 +379,208 @@
             //    }
             #endregion
             #region Task12
-        //    int num, num1, firstNum, lastNum, newNum1, newNum2;
-        //    string newNum3;
-        //    int remainder = 0;
+            //    int num, num1, firstNum, lastNum, newNum1, newNum2;
+            //    int remainder = 0;
+            //L1:
+            //    Console.Write("6 reqemli ededi daxil edin: ");
+            //    string strNum = Console.ReadLine();
+            //    if (!int.TryParse(strNum, out num))
+            //    {
+            //        goto L1;
+            //    }
+            //    int numDigit = (int)Math.Log10(num) + 1;
+            //    if (numDigit != 6)
+            //    {
+            //        goto L1;
+            //    }
+            //    int power1 = (int)Math.Pow(10, numDigit);
+            //    int power2 = (int)Math.Pow(10, numDigit - 2);
+            //    firstNum = (power1 * 8 + num) * 10 + 8;
+            //    lastNum = (firstNum % power2) * power2 + (firstNum / power2);
+            //    newNum1 = 0;
+            //    while (lastNum > 0)
+            //    {
+            //        remainder = lastNum % 10;
+            //        lastNum /= 10;
+            //        newNum1 = newNum1 * 10 + remainder;
+            //    }
+            //    num1 = newNum1;
+            //    newNum2 = 0;
+            //    bool next = true;
+            //    while (num1 > 0)
+            //    {
+            //        remainder = num1 % 10;
+            //        num1 /= 10;
+            //        if (next == true)
+            //        {
+            //            next = !next;
+            //            continue;
+            //        }
+            //        next = !next;
+            //        newNum2 = newNum2 * 100 + remainder;
+            //    }
+            //    Console.WriteLine(newNum2);
+            #endregion
+            #region Task13
+            //    int num, newNum1;
+            //    int newNum2 = 0;
+            //    int count = 0;
+            //    int remainder = 0;
+            //L1:
+            //    Console.Write("7 reqemli ededi daxil edin: ");
+            //    string strNum = Console.ReadLine();
+            //    if (!int.TryParse(strNum, out num))
+            //    {
+            //        goto L1;
+            //    }
+            //    int numDigit = (int)Math.Log10(num) + 1;
+            //    if (numDigit != 7)
+            //    {
+            //        goto L1;
+            //    }
+            //    newNum1 = num;
+            //    while (newNum1 > 0)
+            //    {
+            //        remainder = newNum1 % 10;
+            //        newNum1 /= 10;
+            //        newNum2 = newNum2 * 10 + remainder;
+            //    }
+            //    if (newNum2 == num)
+            //    {
+            //        while (newNum2 > 0)
+            //        {
+            //            remainder = newNum2 % 10;
+            //            newNum2 /= 10;
+            //            if (remainder == 0)
+            //            {
+            //                count++;
+            //            }
+            //        }
+            //        Console.WriteLine($"Verilmis 7 reqemli ededin daxilinde {count} dene 0 var.");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Verilmis 7 reqemli eded polindrom deyil");
+            //    }
+            #endregion
+            #region Task14
+            //    int num, numDigit, power, newNum;
+            //    string strNum;
+            //L1:
+            //    Console.Write("Minimum 1, maksimum 8 reqemli ededi daxil edin: ");
+            //    strNum = Console.ReadLine();
+            //    if (!int.TryParse(strNum, out num))
+            //    {
+            //        goto L1;
+            //    }
+            //    numDigit = (int)Math.Log10(num) + 1;
+            //    if (numDigit > 8)
+            //    {
+            //        goto L1;
+            //    }
+            //    power = (int)Math.Pow(10, numDigit);
+            //    newNum = power + num;
+            //    Console.WriteLine(newNum);
+            #endregion
+            #region Task15
+            //    int num;
+            //    string strNum;
+            //L1:
+            //    Console.Write("Minimum 1, maksimum 365 ededini daxil edin: ");
+            //    strNum = Console.ReadLine();
+            //    if (!int.TryParse(strNum, out num))
+            //    {
+            //        goto L1;
+            //    }
+            //    if (num < 1 || num > 365)
+            //    {
+            //        goto L1;
+            //    }
+            //    DateTime dt = new DateTime(2023, 1, 1);
+            //    dt = dt.AddDays(num - 1);
+            //    Console.WriteLine($"Daxil etdiyiniz edede uygun bu aydir: {dt.ToString("MMMM")}");
+            //    if (dt.Month == 12 && dt.Day >= 22 || dt.Month == 1 && dt.Day <= 20)
+            //    {
+            //        Console.WriteLine("Hemin gune uygun burc Oglaqdir");
+            //    }
+            //    else if (dt.Month == 1 && dt.Day >= 21 || dt.Month == 2 && dt.Day <= 19)
+            //    {
+            //        Console.WriteLine("Hemin gune uygun burc Dolcadir");
+            //    }
+            //    else if (dt.Month == 2 && dt.Day >= 20 || dt.Month == 3 && dt.Day <= 20)
+            //    {
+            //        Console.WriteLine("Hemin gune uygun burc Baliqdir");
+            //    }
+            //    else if (dt.Month == 3 && dt.Day >= 21 || dt.Month == 4 && dt.Day <= 20)
+            //    {
+            //        Console.WriteLine("Hemin gune uygun burc Qocdur");
+            //    }
+            //    else if (dt.Month == 4 && dt.Day >= 21 || dt.Month == 5 && dt.Day <= 20)
+            //    {
+            //        Console.WriteLine("Hemin gune uygun burc Bugadir");
+            //    }
+            //    else if (dt.Month == 5 && dt.Day >= 21 || dt.Month == 6 && dt.Day <= 21)
+            //    {
+            //        Console.WriteLine("Hemin gune uygun burc Ikizlerdir");
+            //    }
+            //    else if (dt.Month == 6 && dt.Day >= 22 || dt.Month == 7 && dt.Day <= 22)
+            //    {
+            //        Console.WriteLine("Hemin gune uygun burc Xercengdir");
+            //    }
+            //    else if (dt.Month == 7 && dt.Day >= 23 || dt.Month == 8 && dt.Day <= 23)
+            //    {
+            //        Console.WriteLine("Hemin gune uygun burc Aslandir");
+            //    }
+            //    else if (dt.Month == 8 && dt.Day >= 24 || dt.Month == 9 && dt.Day <= 23)
+            //    {
+            //        Console.WriteLine("Hemin gune uygun burc Qizdir");
+            //    }
+            //    else if (dt.Month == 9 && dt.Day >= 24 || dt.Month == 10 && dt.Day <= 23)
+            //    {
+            //        Console.WriteLine("Hemin gune uygun burc Terezidir");
+            //    }
+            //    else if (dt.Month == 10 && dt.Day >= 24 || dt.Month == 11 && dt.Day <= 22)
+            //    {
+            //        Console.WriteLine("Hemin gune uygun burc Eqrebdir");
+            //    }
+            //    else if (dt.Month == 11 && dt.Day >= 23 || dt.Month == 12 && dt.Day <= 21)
+            //    {
+            //        Console.WriteLine("Hemin gune uygun burc Yaydir");
+            //    }
+            #endregion
+            #region Task16
+        //    int num, numDigit, remainder, size;
+        //    string strNum;
         //L1:
         //    Console.Write("6 reqemli ededi daxil edin: ");
-        //    string strNum = Console.ReadLine();
+        //    strNum = Console.ReadLine();
         //    if (!int.TryParse(strNum, out num))
         //    {
         //        goto L1;
         //    }
-        //    int numDigit = (int)Math.Log10(num) + 1;
-        //    if (numDigit != 6)
+        //    numDigit = (int)Math.Log10(num) + 1;
+        //    if (numDigit > 8)
         //    {
         //        goto L1;
         //    }
-        //    int power1 = (int)Math.Pow(10, numDigit);
-        //    int power2 = (int)Math.Pow(10, numDigit - 2);
-        //    firstNum = (power1 * 8 + num) * 10 + 8;
-        //    lastNum = (firstNum % power2) * power2 + (firstNum / power2);
-        //    newNum1 = 0;
-        //    while (lastNum > 0)
+        //    int[] nums = new int[0];
+        //    while (num > 0)
         //    {
-        //        remainder = lastNum % 10;
-        //        lastNum /= 10;
-        //        newNum1 = newNum1 * 10 + remainder;
-        //    }
-        //    num1 = newNum1;
-        //    newNum2 = 0;
-        //    bool next = true;
-        //    while (num1 > 0)
-        //    {
-        //        remainder = num1 % 10;
-        //        num1 /= 10;
-        //        if (next == true)
+        //        remainder = num % 10;
+        //        num /= 10;
+
+        //        if (Array.IndexOf(nums, remainder) == -1)
         //        {
-        //            next = !next;
-        //            continue;  
+        //            size = nums.Length;
+        //            Array.Resize(ref nums, size + 1);
+        //            nums[size] = remainder;
         //        }
-        //        next = !next;
-        //        newNum2 = newNum2 * 100 + remainder;
         //    }
-        //    newNum3 = $"{0}{newNum2}";
-        //    Console.WriteLine(newNum3);
+        //    Console.WriteLine($"Verilmis 6 reqemli ededdin daxilinde {nums.Length} dene unikal reqem var ve bunlar asagidakilardir");
+        //    foreach (var item in nums)
+        //    {
+        //        Console.Write($"{item}, ");
+        //    }
             #endregion
         }
     }
