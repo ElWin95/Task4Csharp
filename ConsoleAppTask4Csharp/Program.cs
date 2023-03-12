@@ -529,7 +529,7 @@
             //    }
             //    else if (dt.Month == 7 && dt.Day >= 23 || dt.Month == 8 && dt.Day <= 23)
             //    {
-            //        Console.WriteLine("Hemin gune uygun burc Aslandir");
+            //        Console.WriteLine("Hemin gune uygun burc Shirdir");
             //    }
             //    else if (dt.Month == 8 && dt.Day >= 24 || dt.Month == 9 && dt.Day <= 23)
             //    {
